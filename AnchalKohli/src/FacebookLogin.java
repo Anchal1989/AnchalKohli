@@ -18,9 +18,11 @@ public static void main(String args[]) throws InterruptedException
 	WebElement lgn = driver.findElement(By.id("loginbutton"));
 	lgn.click();
 	String title = driver.getTitle();
-	System.out.println(title);
+	//System.out.println(title);
 	if(title.equals("Facebook – log in or sign up"))
 	System.out.println("Incorrect Login");
+	else
+		System.out.println("Correct Login");	
 	Thread.sleep(3000);
 	driver.close();
 	}
