@@ -20,7 +20,9 @@ public class TestClass
 	//ways to click on login button
 	//WebElement lgn=driver.findElement(By.xpath("//div[text()='Login ']"));
 	//WebElement lgn=driver.findElement(By.xpath("//a[@id='loginButton']/div"));
-	WebElement lgn=driver.findElement(By.xpath("//a[@id='loginButton']/div[text()='Login ']"));
+	//WebElement lgn=driver.findElement(By.xpath("//a[@id='loginButton']/div[text()='Login ']"));
+	WebElement lgn=driver.findElement(By.xpath("//a[@id='loginButton']//div[text()='Login ']"));
+	
 	lgn.click();
 	driver.close();
 	}
